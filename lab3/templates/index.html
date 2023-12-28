@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <style>
+        form {
+            max-width: 290px;
+            margin: 0 auto;
+            text-align: center;
+            font-family: Calibri, sans-serif;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        input, textarea {
+            padding: 0.5rem;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            opacity: 0.9;
+            margin-bottom: 20px;
+            }
+
+        button {
+            margin-top: 10px;
+            background: #3740ff;
+            color: #fff;
+            border: none;
+            padding: 0.6rem;
+            border-radius: 5px;
+            }
+
+        button:hover,
+        button:focus {
+            background: #272eb5;
+        }
+
+    </style>
+
+</head>
+<body>
+    <form method="GET">
+        <!-- {% csrf_token %} -->
+        <div>
+            <h2 style="font-weight: bold; opacity: 0.7;">LogIn</h2> 
+        </div>
+
+        <div>
+            <input type="text" name="login" placeholder="Login">
+        </div>
+
+        <div>
+            <input type="password" name="password" placeholder="Password">
+        </div> 
+
+        {{ form.captcha }}
+        <div style="color: red; white-space: nowrap;">
+            {{ form.captcha.errors.as_text }}
+        </div>
+        
+        {% if success_message %}
+            <div style="white-space: nowrap;">
+                {% if 'successful' in success_message %}
+                    <p style="color: green;">{{ success_message }}</p>
+                {% else %}
+                    <p style="color: red;">{{ success_message }}</p>
+                {% endif %}
+            </div>
+        {% endif %}
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>
