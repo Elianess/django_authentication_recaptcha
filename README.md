@@ -1,7 +1,8 @@
 # django_authentication_recaptcha
 django_authentication_recaptcha
 
-![image](https://github.com/Elianess/django_authentication_recaptcha/assets/66972306/32fd0428-a1d2-4547-a91a-96f19e3dc9bd)
+![lab 3_3_1](https://github.com/Elianess/django_authentication_recaptcha/assets/66972306/23c752af-dd50-4bf7-b656-ef0630d1f0c5)
 
+![lab 3_3_3](https://github.com/Elianess/django_authentication_recaptcha/assets/66972306/19451356-8942-438f-a4d6-a4e0fd8ef2b8)
 
-![image](https://github.com/Elianess/django_authentication_recaptcha/assets/66972306/0ccebd98-0150-4299-aa0c-47200bbdc4fa)
+![lab 3_3_4](https://github.com/Elianess/django_authentication_recaptcha/assets/66972306/b79a8956-5521-4fe1-9734-f47ebfae679a)
